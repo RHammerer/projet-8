@@ -1,0 +1,23 @@
+.div-erreur{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.code-erreur{
+    font-size: 288px;
+    color: #FF6060;
+}
+
+.text-erreur{
+    font-size: 36px;
+    color: #FF6060;
+}
+
+.ul-erreur{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    gap: 119px;
+}

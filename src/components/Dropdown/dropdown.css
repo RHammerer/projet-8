@@ -1,0 +1,43 @@
+.summary-about{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: #FF6060;
+    padding: 25px;
+    border-radius: 15px;
+    color: white;
+    list-style: none;   
+}
+
+.paragraph-about{
+    font-size: 20px;
+    padding: 10px;
+    margin-top: -5px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: #F6F6F6;
+    color: #FF6060;
+}
+
+.arrow-up {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    transition: all 0.5s;
+}
+
+.arrow-down {
+    position: absolute;
+    top: 20px;
+    right: 50px;   
+}
+
+details .arrow-down{
+    display: none;
+}
+
+details[open] .arrow-up{
+    transform: rotate(-180deg);
+}
+details[open] .arrow-down{
+    display: none;
+}
