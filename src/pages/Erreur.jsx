@@ -1,6 +1,7 @@
 import "./erreur.css";
 import Navigation from "../components/Navigation/Navigation";
 import Footer from "../components/Footer/Footer";
+import { NavLink } from "react-router-dom";
 
 export default function Erreur() {
   return (
@@ -11,10 +12,12 @@ export default function Erreur() {
           <p className="code-erreur">404</p>
         </li>
         <li>
-          <p className="text-erreur">Oups! La page que vous demandez n'éxiste pas</p>
+          <p className="text-erreur">
+            Oups! La page que vous demandez n'éxiste pas
+          </p>
         </li>
         <li>
-          <a href="index.html">Retourner à la page d'accueil</a>
+          <NavLink to="/">Retourner sur la page d'accueil</NavLink>
         </li>
       </ul>
       <Footer />
