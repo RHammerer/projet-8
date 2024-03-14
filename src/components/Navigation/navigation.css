@@ -1,5 +1,6 @@
 header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-bottom: 2rem;
 }
@@ -43,5 +44,40 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 75%;
+    /* width: 75%; */
+    padding: 0px 100px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+header {
+    display: flex;
+    flex-direction: column;
+}
+.kasa-hdp{
+    width: 135px;
+}
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        gap: 30px;
+    }
+    nav img {
+        width: 145px;
+        height: 47px;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        font-size: 12px;
+        gap: 25px;
+        margin: 0px;
+    }
+    li a.active:after{
+        bottom: 0px;
+    }
 }

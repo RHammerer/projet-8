@@ -11,8 +11,10 @@ export default function App() {
   console.log(data);
   return (
     <>
-      <Navigation />
-      <Banner url={hautDePage} title="Chez vous, partout et ailleurs" />
+      <header>
+        <Navigation />
+        <Banner url={hautDePage} title="Chez vous, partout et ailleurs" />
+      </header>
       <section className="section-appartement">
         <div className="thumbnail-container">
           {data.map((appart) => (

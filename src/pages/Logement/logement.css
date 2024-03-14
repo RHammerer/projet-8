@@ -1,0 +1,65 @@
+.drop-down-about{
+    display: flex;
+    flex-direction: row;
+    color: #FF6060;
+}
+.dropdown{
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+    width: 90%;
+    margin-top: 15px;
+}
+.nom-logement{
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+}
+.location {
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 500;
+}
+.liste-equipements{
+list-style: none;
+padding: 10px;
+font-size:20px ;
+gap: 5px;
+background-color: #F6F6F6;
+}
+.tags-list {
+    gap: 10px;
+}
+
+.host{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.host img {
+    border-radius: 100%;
+    height: 64px;
+    width: 64px;
+}
+.host p {
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 500;
+}
+.container-tags{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: #F6F6F6;
+}
+.tags{
+    list-style: none;
+    padding: 5px;
+    background: #FF6060;
+    border-radius: 20px;
+    
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .liste-equipements{
+        font-size: 10px;
+    }
+}

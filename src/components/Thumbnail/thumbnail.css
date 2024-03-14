@@ -36,3 +36,27 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .thumbnail-container{
+        flex-direction: row;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .thumbnail-container{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        padding: 0px;
+        background: white;
+        margin-top: 0px;
+
+    }
+    .thumbnail-container a {
+        display: flex;
+        justify-content: center;
+    }
+    .thumbnail{
+        width: 100%;
+    }
+}

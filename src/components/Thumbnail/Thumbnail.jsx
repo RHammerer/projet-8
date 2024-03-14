@@ -1,10 +1,13 @@
-import './thumbnail.css';
+import { Link } from "react-router-dom";
+import "./thumbnail.css";
 
 export default function Thumbnail({ appart }) {
-    return (
-        <figure className='thumbnail'>
-            <img src={appart.cover} alt={appart.title} />
-            <figcaption>{appart.title}</figcaption>
-        </figure>
-    )
+  return (
+    <Link to={`/logement/${appart.id}`}>
+      <figure className="thumbnail">
+        <img src={appart.cover} alt={appart.title} />
+        <figcaption>{appart.title}</figcaption>
+      </figure>
+    </Link>
+  );
 }

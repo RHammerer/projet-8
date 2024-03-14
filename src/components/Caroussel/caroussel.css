@@ -1,0 +1,29 @@
+.slider {
+    position: relative;
+    height: 300px;
+}
+
+.slider-picture {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider-next {
+    position: absolute;
+    top: 40%;
+    right: 15px;
+}
+
+.slider-previous {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+}
+
+.counter {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    color: white;
+}

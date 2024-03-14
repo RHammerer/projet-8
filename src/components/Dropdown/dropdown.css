@@ -41,3 +41,21 @@ details[open] .arrow-up{
 details[open] .arrow-down{
     display: none;
 }
+
+@media (min-width: 320px) and (max-width: 767px){
+    .section-about{
+        width: 100%;
+    }
+    .drop-down-about{
+        width: 90%;
+    }
+    .summary-about{
+        font-size: 13px;
+    }
+    .paragraph-about{
+        font-size: 12px;
+    }
+    .liste-equipements{
+        font-size: 10px;
+    }
+}

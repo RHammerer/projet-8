@@ -1,0 +1,12 @@
+.rating {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    padding-top: 30px;
+}
+
+.rating img {
+    width: 36px;
+    height: 36px;
+}
