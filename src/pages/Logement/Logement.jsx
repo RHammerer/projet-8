@@ -27,8 +27,6 @@ export default function Logement() {
     setLogement(appart);
   });
 
-  console.log(logement);
-
   if (!logement) return <div>Chargement...</div>;
 
   return (
@@ -38,13 +36,13 @@ export default function Logement() {
         <Caroussel slides={logement.pictures} />
         <article className="article-logement">
           <div className="head-logement">
-            <h1 className="nom-logement" onClick={() => console.log("coco")}>
-              {logement.title}
-            </h1>
+            <h1 className="nom-logement">{logement.title}</h1>
             <p className="location">{logement.location}</p>
             <ul className="container-tags">
               {logement.tags.map((tag) => (
-                <li className="tags">{tag}</li>
+                <li key={tag} className="tags">
+                  {tag}
+                </li>
               ))}
             </ul>
           </div>

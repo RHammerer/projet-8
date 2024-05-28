@@ -8,7 +8,6 @@ import Thumbnail from "./components/Thumbnail/Thumbnail";
 import Footer from "./components/Footer/Footer";
 
 export default function App() {
-  console.log(data);
   return (
     <>
       <header>
@@ -18,7 +17,7 @@ export default function App() {
       <section className="section-appartement">
         <div className="thumbnail-container">
           {data.map((appart) => (
-            <Thumbnail appart={appart} />
+            <Thumbnail key={appart.id} appart={appart} />
           ))}
         </div>
       </section>

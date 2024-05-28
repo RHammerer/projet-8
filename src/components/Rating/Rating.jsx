@@ -8,9 +8,9 @@ export default function Rating({ rating }) {
     <div className="rating">
       {array.map((score) => {
         if (score <= rating) {
-          return <img src={RedStar} alt="etoile rouge " />;
+          return <img src={RedStar} alt="etoile rouge " key={Math.random()} />;
         }
-        return <img src={GrayStar} alt="etoile grise " />;
+        return <img src={GrayStar} alt="etoile grise " key={Math.random()} />;
       })}
     </div>
   );
