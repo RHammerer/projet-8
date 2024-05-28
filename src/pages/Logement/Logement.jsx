@@ -36,20 +36,26 @@ export default function Logement() {
       <Navigation />
       <main>
         <Caroussel slides={logement.pictures} />
-        <h1 className="nom-logement" onClick={() => console.log("coco")}>
-          {logement.title}
-        </h1>
-        <p className="location">{logement.location}</p>
-        <ul className="container-tags">
-          {logement.tags.map((tag) => (
-            <li className="tags">{tag}</li>
-          ))}
-        </ul>
-        <div className="host">
-          <img src={logement.host.picture} alt="hote du logement" />
-          <p>{logement.host.name}</p>
-        </div>
-        <Rating rating={logement.rating} />
+        <article className="article-logement">
+          <div className="head-logement">
+            <h1 className="nom-logement" onClick={() => console.log("coco")}>
+              {logement.title}
+            </h1>
+            <p className="location">{logement.location}</p>
+            <ul className="container-tags">
+              {logement.tags.map((tag) => (
+                <li className="tags">{tag}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="host-rating">
+            <div className="host">
+              <img src={logement.host.picture} alt="hote du logement" />
+              <p className="host-name">{logement.host.name}</p>
+            </div>
+            <Rating rating={logement.rating} />
+          </div>
+        </article>
         <div className="dropdown">
           <Dropdown title="Description" description={logement.description} />
           <Dropdown title="Équipements" equipments={logement.equipments} />

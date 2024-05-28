@@ -10,3 +10,17 @@
     width: 36px;
     height: 36px;
 }
+
+@media (min-width: 320px) and (max-width: 767px){
+    .rating{
+        justify-content: flex-start;
+        width: 120px;
+        height: 50px;
+        padding: 0px;
+    }
+    .rating img {
+        width: 20px;
+        height: 20px;
+        
+    }
+}

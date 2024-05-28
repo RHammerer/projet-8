@@ -51,11 +51,16 @@ details[open] .arrow-down{
     }
     .summary-about{
         font-size: 13px;
+        padding: 15px;
     }
     .paragraph-about{
         font-size: 12px;
     }
     .liste-equipements{
         font-size: 10px;
+    }
+    .arrow-down , .arrow-up {
+        right: 10px;
+        top: 5px;
     }
 }

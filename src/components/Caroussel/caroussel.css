@@ -7,6 +7,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .slider-next {
@@ -26,4 +27,10 @@
     bottom: 10px;
     left: 50%;
     color: white;
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .slider-next img,.slider-previous img{
+        width: 30px;
+        height: 30px;
+    }
 }
