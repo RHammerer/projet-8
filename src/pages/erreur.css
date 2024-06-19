@@ -22,3 +22,18 @@
     align-items: center;
     gap: 119px;
 }
+
+@media (min-width: 320px) and (max-width: 767px){
+    nav {
+        width: 100%;
+    }
+    .div-erreur{
+        width: 100%;
+    }
+    .ul-erreur{
+        gap: 25px;
+    }
+    .code-erreur{
+        font-size: 14px;
+    }
+}

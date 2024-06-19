@@ -7,7 +7,7 @@ export default function Navigation() {
     // <header>
     <nav>
       <img className="kasa-hdp" src={logoKasa} alt="Logo Kasa" />
-      <ul>
+      <ul className="ul-nav">
         <li>
           <NavLink to="/"> Accueil</NavLink>
         </li>

@@ -45,19 +45,16 @@ nav{
     justify-content: space-between;
     align-items: center;
     /* width: 75%; */
-    padding: 0px 100px;
+    padding: 15px 100px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
 header {
     display: flex;
     flex-direction: column;
 }
-.kasa-hdp{
-    width: 135px;
-}
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 768px) {
     nav {
         display: flex;
         flex-direction: row;
@@ -66,7 +63,7 @@ header {
         gap: 30px;
         padding: 20px;
     }
-    nav img {
+    .kasa-hdp {
         width: 145px;
         height: 47px;
     }
@@ -77,6 +74,11 @@ header {
         font-size: 12px;
         gap: 25px;
         margin: 0px;
+    }
+    .ul-nav{
+        display: flex;
+        justify-content: space-around;
+        gap: 25px;
     }
     li a.active:after{
         bottom: 0px;
