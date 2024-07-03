@@ -8,6 +8,14 @@
     color: white;
     list-style: none;   
 }
+.section-about{
+    width: 90%;
+    padding-top: 25px;
+    margin: 0 auto;
+}
+.drop-down-about{
+    width: 100%;
+}
 
 .paragraph-about{
     font-size: 20px;
