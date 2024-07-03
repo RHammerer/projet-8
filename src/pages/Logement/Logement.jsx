@@ -4,9 +4,9 @@ import data from "../../data/logements.json";
 import Caroussel from "../../components/Caroussel/Caroussel";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import "./logement.css";
-import Navigation from "../../components/Navigation/Navigation";
 import Footer from "../../components/Footer/Footer";
 import Rating from "../../components/Rating/Rating";
+import Header from "../../components/Navigation/Header";
 
 export default function Logement() {
   const [logement, setLogement] = useState(null);
@@ -31,7 +31,8 @@ export default function Logement() {
 
   return (
     <>
-      <Navigation />
+      <Header />
+
       <main>
         <Caroussel slides={logement.pictures} />
         <article className="article-logement">

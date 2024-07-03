@@ -41,11 +41,19 @@ details[open] .arrow-up{
 details[open] .arrow-down{
     display: none;
 }
-
-@media (min-width: 320px) and (max-width: 767px){
+@media (min-width: 768px) and (max-width: 1024px){
     .section-about{
         width: 100%;
     }
+    .drop-down-about{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px){
+    /* .section-about{
+        width: 100%;
+    } */
     .drop-down-about{
         width: 90%;
     }

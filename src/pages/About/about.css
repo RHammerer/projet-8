@@ -55,3 +55,20 @@ details[open] .arrow-up{
 details[open] .arrow-down{
     display: none;
 }
+
+@media (min-width: 320px) and (max-width: 767px){
+    body{
+        width: 100%;
+    }
+    .kasa-hdp{
+        width: 70px;
+    }
+
+
+   
+    .section-about{
+        display: flex;
+        padding:0px 5% ;
+    }
+
+}

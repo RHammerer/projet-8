@@ -2,11 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .banner {
     height: 223px;
-    width: 1240px;
+    margin: 0 auto;
+    width: 100%;
     position: relative;
 
 }
@@ -27,24 +30,36 @@
     font-size: 28px;
 }
 @media (min-width: 768px) and (max-width: 1024px){
+    .section-banner{
+        margin: 0 auto;
+    }
     .banner h2 {
-        top: 40%;
-        right: 10%;
+        font-size: 25px;
         display: flex;
-        justify-content: flex-start;
+       margin: 0 auto;
+       align-items: center;
     }
     .banner img{ 
-        width: 75%;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+    .section-banner{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+
+       }
     .banner{
         height: 120px;
         margin-top: 10px;
-        width: 90%;
+        width: 100%;
+    }
+    .banner img{
+        width: 100%;
     }
     .banner h2 {
         left: 10px;
