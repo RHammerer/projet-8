@@ -1,7 +1,7 @@
 import "./erreur.css";
-import Footer from "../components/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 import { NavLink } from "react-router-dom";
-import Header from "../components/Navigation/Header";
+import Header from "../../components/Navigation/Header";
 
 export default function Erreur() {
   return (

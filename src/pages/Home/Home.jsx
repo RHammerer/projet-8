@@ -1,13 +1,13 @@
-import hautDePage from "./assets/hdp.jpeg";
-import Banner from "./components/Banner/Banner";
-import data from "./data/logements.json";
+import hautDePage from "../../assets/hdp.jpeg";
+import Banner from "../../components/Banner/Banner";
+import data from "../../data/logements.json";
 
 import "./home.css";
-import Thumbnail from "./components/Thumbnail/Thumbnail";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Navigation/Header";
+import Thumbnail from "../../components/Thumbnail/Thumbnail";
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Navigation/Header";
 
-export default function App() {
+export default function Home() {
   return (
     <>
       <Header />

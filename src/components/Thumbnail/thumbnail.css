@@ -24,7 +24,9 @@
     height: 100%;
     object-fit: cover;
 }
-
+.appart-name{
+    font-weight: bold;
+}
 .thumbnail figcaption {
     position: absolute;
     left: 5px;
@@ -50,7 +52,7 @@
 width: 100%;
  }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
     .thumbnail-container{
         display: grid;
         grid-template-columns: 1fr;

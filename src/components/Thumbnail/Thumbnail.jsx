@@ -6,7 +6,7 @@ export default function Thumbnail({ appart }) {
     <Link to={`/logement/${appart.id}`}>
       <figure className="thumbnail">
         <img src={appart.cover} alt={appart.title} />
-        <figcaption>{appart.title}</figcaption>
+        <figcaption className="appart-name">{appart.title}</figcaption>
       </figure>
     </Link>
   );

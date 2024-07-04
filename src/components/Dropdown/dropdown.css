@@ -58,10 +58,10 @@ details[open] .arrow-down{
         margin: 0 auto;
     }
 }
-@media (min-width: 320px) and (max-width: 767px){
-    /* .section-about{
+@media (max-width: 767px){
+    .section-about{
         width: 100%;
-    } */
+    }
     .drop-down-about{
         width: 90%;
     }
